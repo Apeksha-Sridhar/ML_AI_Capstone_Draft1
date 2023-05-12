@@ -1,9 +1,9 @@
-# Capstone Draft 1
+#Capstone Draft 1
 
-## Overview
+##Overview
 This project is the first draft of my Capstone project. Here I examine the EEG components of patients and build predict models to classify a patient with a diagnosis. 
 
-## Dataset
+##Dataset
 This dataset contains the EEG resting state-closed eyes recordings from 88 subjects in total.  
 1. Participants: 36 of them were diagnosed with Alzheimer's disease (AD group), 23 were diagnosed with Frontotemporal Dementia (FTD group) and 29 were healthy subjects (CN group). Cognitive and neuropsychological state was evaluated by the international Mini-Mental State Examination (MMSE). MMSE score ranges from 0 to 30, with lower MMSE indicating more severe cognitive decline. The duration of the disease was measured in months and the median value was 25 with IQR range (Q1-Q3) being 24 - 28.5 months. Concerning the AD groups, no dementia-related comorbidities have been reported. 
 2. Recordings: Recordings were aquired with 19 scalp electrodes (Fp1, Fp2, F7, F3, Fz, F4, F8, T3, C3, Cz, C4, T4, T5, P3, Pz, P4, T6, O1, and O2) according to the 10-20 international system and 2 reference electrodes (A1 and A2) placed on the mastoids for impendance check, according to the manual of the device. Each recording was performed according to the clinical protocol with participants being in a sitting position having their eyes closed. 
@@ -13,8 +13,8 @@ removing bad data periods which exceeded the max acceptable 0.5 second window st
 Next, the Independent Component Analysis (ICA) method (RunICA algorithm) was performed, transforming the 19 EEG signals to 19 ICA components. 
 https://openneuro.org/datasets/ds004504/versions/1.0.2
 
-## Research Question: 
-### 1. Can the analysis of specific EEG components, such the power spectrum, be used as reliable biomarkers to predict the diagnosis of Alzheimer's disease?
+##Research Question: 
+###1. Can the analysis of specific EEG components, such the power spectrum, be used as reliable biomarkers to predict the diagnosis of Alzheimer's disease?
 
 Aim: To investigate the potential relationship between the power spectrum and Alzheimer's disease diagnosis.
 
@@ -27,7 +27,7 @@ Furthermore, understanding the relationship between the power spectrum and Alzhe
 
 Analysis: Classification model pipelines for multi class classification
 
-### 2. What specific independent component analysis (ICA) derived EEG components are significantly predictive of cognitive decline and impairment in adults with dementia?
+###2. What specific independent component analysis (ICA) derived EEG components are significantly predictive of cognitive decline and impairment in adults with dementia?
 
 Aim: To identify EEG components that can serve as predictive markers for cognitive decline and impairment
 
@@ -38,20 +38,20 @@ Furthermore, by identifying specific EEG components that are predictive of cogni
 
 Analysis: Regression model pipelines for numerical predictions.
 
-## Dataset and Notebook
+##Dataset and Notebook
 The link to the dataset is:
 The link to the Jupyter Notebook is:
 
-## Initial Data Findings
+##Initial Data Findings
 1. Chose the decision tree classification model as it provided the highest accuracy scores and it is an easy model to interpret.
 2. Accuracy of determining the control group: , frontotemporal dementia: , Alzheimers: .
 
-## Business Findings
+##Business Findings
 EEG components can be used as a cost effective, non-intrusive method to diagnose dementia. 
 
 More accuracte predictions can be made once more data is collected.
 
-## Next Steps
+##Next Steps
 1. Remove warnings
 2. Refine and interpret Results
 3. Translate interpreted results in non-technical terms
