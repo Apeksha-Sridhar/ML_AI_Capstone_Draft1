@@ -11,7 +11,7 @@ This dataset contains the EEG resting state-closed eyes recordings from 88 subje
 Then, the Artifact Subspace Reconstruction routine (ASR) which is an EEG artifact correction method included in the EEGLab Matlab software was applied to the signals, 
 removing bad data periods which exceeded the max acceptable 0.5 second window standard deviation of 17, which is considered a conservative window. 
 Next, the Independent Component Analysis (ICA) method (RunICA algorithm) was performed, transforming the 19 EEG signals to 19 ICA components. 
-https://openneuro.org/datasets/ds004504/versions/1.0.2
+
 
 ## Research Question: 
 ### 1. Can the analysis of specific EEG components, such the power spectrum, be used as reliable biomarkers to predict the diagnosis of Alzheimer's disease?
@@ -39,7 +39,8 @@ Furthermore, by identifying specific EEG components that are predictive of cogni
 Analysis: Regression model pipelines for numerical predictions.
 
 ## Dataset and Notebook
-The link to the dataset is:
+The link to the dataset is: https://openneuro.org/datasets/ds004504/versions/1.0.2
+
 The link to the Jupyter Notebook is:
 
 ## Initial Data Findings
