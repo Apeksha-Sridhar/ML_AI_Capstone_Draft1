@@ -41,11 +41,12 @@ Analysis: Regression model pipelines for numerical predictions.
 ## Dataset and Notebook
 The link to the dataset is: https://openneuro.org/datasets/ds004504/versions/1.0.2
 
-The link to the Jupyter Notebook is:
+The link to the Jupyter Notebook is: https://github.com/Apeksha-Sridhar/ML_AI_Capstone_Draft1/blob/main/Capstone%20draft%201.ipynb
 
 ## Initial Data Findings
-1. Chose the decision tree classification model as it provided the highest accuracy scores and it is an easy model to interpret.
-2. Accuracy of determining the control group: , frontotemporal dementia: , Alzheimers: .
+1. Using PCA to reduce number of components drastically reduced thr urn time of the model.
+2. KNN performed poorly as compared to logistic regression. If the decision tree classification model provides the highest accuracy scores, I will chose to use that model as it is an easy model to interpret.
+3. Accuracy of logistic regression was 81% while KNN was 50%.
 
 ## Business Findings
 EEG components can be used as a cost effective, non-intrusive method to diagnose dementia. 
@@ -54,6 +55,6 @@ More accuracte predictions can be made once more data is collected.
 
 ## Next Steps
 1. Remove warnings
-2. Refine and interpret Results
+2. Run remaining models
 3. Translate interpreted results in non-technical terms
 4. Answer second research question using regression models
